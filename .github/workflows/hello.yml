@@ -11,3 +11,5 @@ jobs:
    steps:
      - name: Say manuel
        run: echo "Manuel"
+     - name: list file
+       run: ls
