@@ -15,5 +15,11 @@ jobs:
      - uses: actions/setup-node@v2
        with:
         node-version: 14
-     - run: npm install
-     - run: npm run lint
+     - name: Intall Dependencies
+       run: npm install --no-audit --no-optional --no-fund
+     - name: Linter
+       run: npm run lint
+     - name: Build
+       run: npm run build
+     - name: Tests
+       run: npm run test
